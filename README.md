@@ -1,12 +1,17 @@
-# React + Vite
+# Nike Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend project using **Vite** and **Tailwind CSS v4.1**, with custom utility classes defined directly in CSS (without a `tailwind.config.js` file). It includes a responsive layout and reusable padding utilities for consistency across sections.
 
-Currently, two official plugins are available:
+React is a JavaScript library for building user interfaces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tailwind CSS is a utility-first CSS framework for rapidly building custom designs without writing custom CSS from scratch.
 
-## Expanding the ESLint configuration
+Utility-first CSS is a styling approach where you build your designs by composing small, single-purpose CSS classes directly in your HTML or JSX.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A component in React is a reusable, independent piece of UI. Think of it like a building block. You can create a component for a: Button,Header, Card and Navbar.
+
+Props (short for properties) are how you pass data into components.
+
+Props make your components dynamic and reusable by allowing you to customize their behavior or content.
+
+map() in React is used to render multiple components from an array of data. It  avoids repeating code for similar UI elements.
