@@ -1,12 +1,14 @@
 import React from 'react';
 import { navLinks } from '../constants';
+import { headerLogo } from '../assets/images';
+import { hamburger } from '../assets/icons';
 
 const Nav = () => {
   return (
     <header className='padding-x py-8 absolute z-10 w-full'>
       <nav className='flex justify-between items-center max-container'>
         <a href="/">
-        <img src="/src/assets/images/header-logo.svg" 
+        <img src={headerLogo}
         alt="logo" 
         className='m-0 w-[129px] h-[29px]' />
         </a>
@@ -25,7 +27,7 @@ const Nav = () => {
         </ul>
         {/*hamburger menu on mobile devices */}
         <div className='hidden max-lg:block'>
-            <img src="/src/assets/icons/hamburger.svg" alt="hamburger menu" width={25} height={25} />
+            <img src={hamburger} alt="hamburger menu" width={25} height={25} />
         </div>
       </nav>
     </header>
