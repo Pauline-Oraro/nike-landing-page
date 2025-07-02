@@ -1,3 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
+
+
 @import "tailwindcss";
 
 
+
+
+
+@theme {
+  --color-mint-500: oklch(0.72 0.11 178);
+  --primary: #ECEEFF;
+  --coral-red: #FF6452;
+  --slate-gray: #6D6D6D;
+  --pale-blue: #F5F6FF;
+  --white-400: rgba(255, 255, 255, 0.80);
+  --font-palanquin: 'Palanquin', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-base: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+  --text-4xl: 48px;
+  --text-8xl: 96px;
+  --background-image: url('assets/images/collection-background.svg');
+  --background-card: url('assets/images/thumbnail-background.svg');
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.text-coral-red{
+  color: var(--coral-red);
+}
+
+.bg-coral-red{
+  background-color: var(--coral-red);
+}
+
+.bg-white{
+  background-color: var(--white-400);
+}
+
+.bg-primary{
+  background-color: var(--primary);
+}
+
+.bg-hero{
+  background-image: var(--background-image);
+}
+.bg-card{
+  background-image: var(--background-card);
+}
+
+.border-coral-red{
+  border-color: var(--coral-red);
+}
+
+.border-slate-gray{
+  border-color: var(--slate-gray);
+}
+
+.font-montserrat {
+    font-family: var(--font-montserrat);
+}
+
+.font-palanquin {
+    font-family: var(--font-palanquin);
+}
+
+.bg-pale-blue{
+  background-color: var(--pale-blue);
+}
+
+.text-slate-gray{
+  color: var(--slate-gray);
+}
+
+.text-8xl{
+  font-size: var(--text-8xl);
+}
+
+.shadow-3xl{
+  box-shadow: var(--shadow-3xl);
+}
+
+
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .input {
+   @apply sm:flex-1 max-sm:w-full text-base leading-normal  pl-5 max-sm:p-5 outline-none sm:border-none border  max-sm:rounded-full;
+    color: var(--slate-gray);
+    border-color: var(--slate-gray);
+  }
+}
+
+
+
+@layer utilities {
+  .padding {
+    @apply  px-8 py-12 sm:px-16 sm:py-24;
+  }
+
+  .padding-x {
+    @apply px-8 sm:px-16 ;
+  }
+
+  .padding-y {
+    @apply py-12 sm:py-24;
+  }
+
+  .padding-l {
+    @apply pl-8 sm:pl-16;
+  }
+
+  .padding-r {
+    @apply pr-8 sm:pr-16;
+  }
+
+  .padding-t {
+    @apply pt-12 sm:pt-24;
+  }
+
+  .padding-b {
+    @apply pb-12 sm:pb-24;
+  }
+
+  .info-text {
+    @apply  text-lg leading-7;
+    color: var(--slate-gray);
+    font-family: var(--font-montserrat);
+  }
+}
